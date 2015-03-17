@@ -2,8 +2,13 @@
 
 # add user 
 adduser --shell /bin/sh --disabled-password --gecos 'Bridge User,,,' yun
+
 # link runlevel scripts
+# link bootloader - FIXME, should be done in init scripts 
+ln -sf /etc/arduino/ATmegaBOOT_168_atmega328_pro_8MHz.hex /etc/arduino/avr-default.hex
+
 # add line to /etc/inittab
+
 
 exit 0
 
