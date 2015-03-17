@@ -3,7 +3,7 @@ Version: 6.0.1
 Section: base
 Priority: optional
 Architecture: armhf
-Depends: libusb-0.1 libusb-1.0
+Depends: libusb-0.1, libusb-1.0
 Maintainer: Mattias Schlenker <ms@mattiasschlenker.de>
 Description: Avrdude build with bitbanging GPIO support to allow programming
  ATmegas connected to Raspberry Pis GPIO pins.
