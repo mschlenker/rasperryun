@@ -10,7 +10,6 @@ void setup() {
   delay(1000);      
   Bridge.begin();
   delay(1000);
-  Bridge.put("hello","world"); 
 }
 
 void loop() {
@@ -18,4 +17,5 @@ void loop() {
   delay(10);              // wait for a second
   digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
   delay(1000);              // wait for a second
+  Bridge.put("hello","world"); 
 }
