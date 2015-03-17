@@ -8,10 +8,11 @@ void setup() {
   digitalWrite(13, HIGH); 
   delay(1000);           
   digitalWrite(13, LOW);  
-  delay(1000);      
+  delay(1000);     
+  Bridge.begin(); 
   FileSystem.begin();
   File script = FileSystem.open("/tmp/stuff.txt", FILE_WRITE);
-  script.print("Hello world!\n");
+  script.println("Hello world!");
   script.close();  // close the file
   delay(1000);
 }
