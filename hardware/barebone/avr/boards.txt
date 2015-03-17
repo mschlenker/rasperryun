@@ -1,0 +1,29 @@
+
+########### Pseudo Yun with Atmega328P
+
+yun328.name=Poor Man's Yún (Atmega328P, 3.3V, 8Mhz)
+yun328.upload.via_ssh=true
+
+yun328.upload.tool=arduino:avrdude
+yun328.upload.protocol=arduino
+yun328.upload.maximum_size=30720
+yun328.upload.maximum_data_size=2048
+yun328.upload.speed=57600
+yun328.upload.disable_flushing=true
+
+yun328.bootloader.tool=avrdude
+yun328.bootloader.low_fuses=0xE2
+yun328.bootloader.high_fuses=0xDE
+yun328.bootloader.extended_fuses=0x05
+yun328.bootloader.unlock_bits=0x3F
+yun328.bootloader.lock_bits=0x0F
+yun328.bootloader.file=ATmegaBOOT_168_atmega328_pro_8MHz.hex
+
+yun328.build.mcu=atmega328p
+yun328.build.f_cpu=8000000L
+yun328.build.board=AVR_PRO
+yun328.build.core=arduino:arduino
+yun328.build.variant=arduino:standard
+
+
+
