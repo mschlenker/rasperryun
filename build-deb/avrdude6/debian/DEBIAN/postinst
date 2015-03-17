@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Do nothing here. Later the presence of a certain AVR might be checked.
+
+exit 0
+

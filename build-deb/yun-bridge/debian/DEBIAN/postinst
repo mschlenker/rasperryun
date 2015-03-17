@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# add user 
+adduser --shell /bin/sh --disabled-password --gecos 'Bridge User,,,' yun
+# link runlevel scripts
+# add line to /etc/inittab
+
+exit 0
+
