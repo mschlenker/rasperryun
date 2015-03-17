@@ -1,9 +1,9 @@
 Package: yun-bridge
-Version: 20150317-1
+Version: 20150317-2
 Section: base
 Priority: optional
 Architecture: all
-Depends: bash, python2.7, avrdude6, lua5.1, telnet
+Depends: bash, python2.7, avrdude6, lua5.1, telnet, avahi-utils
 Maintainer: Mattias Schlenker <ms@mattiasschlenker.de>
 Description: Arduinos Yun bridge and some glue scripts to make Raspberry Pi
  with an AVR attached to the GPIO pins behave like an Arduino Yun.
