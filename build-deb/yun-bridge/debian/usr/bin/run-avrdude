@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# FIXME! Use avrdude to find out which MCU we are using!
+/usr/local/bin/avrdude -c linuxgpio -C /usr/local/etc/avrdude.conf -p atmega328p -U lfuse:w:0xE2:m -U hfuse:w:0xDA:m -U efuse:w:0x05:m -Uflash:w:/tmp/sketch.hex:i
+
+exit 0
+
+#echo 1 > /sys/class/gpio/gpio21/value
+#avrdude  -q -q -c linuxgpio -C /etc/avrdude.conf -p m32u4 -U efuse:r:/tmp/efuse:d
+#read EFUSE < /tmp/efuse
+#rm -f /tmp/efuse
+#if [ "x$EFUSE" = "x203" ] # 203 = 0xCB
+#then
+#	avrdude -c linuxgpio -C /etc/avrdude.conf -p m32u4 -U lfuse:w:0xFF:m -U hfuse:w:0xD8:m -U efuse:w:0xCB:m -Uflash:w:$1:i $2
+#else
+#	avrdude -c linuxgpio -C /etc/avrdude.conf -p m32u4 -U lfuse:w:0xFF:m -U hfuse:w:0xD8:m -U efuse:w:0xFB:m -Uflash:w:$1:i $2
+#fi
+#echo 0 > /sys/class/gpio/gpio21/value
