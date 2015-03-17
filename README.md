@@ -12,4 +12,5 @@ Missing:
 
 * Reset the AVR upon reboot
 * Blink some LED during sketch upload
+* Automatically detect different AVRs add boot time
 
